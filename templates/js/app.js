@@ -73,6 +73,7 @@ function startRecording() {
 
 	}).catch(function(err) {
 	  	//enable the record button if getUserMedia() fails
+		console.log(err);
     	recordButton.disabled = false;
     	stopButton.disabled = true;
     	pauseButton.disabled = true
